@@ -72,6 +72,9 @@
     .mgt-5{
       margin-top: 5px;
     }
+    .bdr-stl{
+      border: 1px solid #ccc;
+    }
 
 .loader {
   border: 6px solid #f3f3f3;
