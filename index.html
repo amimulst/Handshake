@@ -1,0 +1,99 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Handshake</title>
+
+  <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+  <link href="lib/fontawesome-free-5.0.13/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
+
+  <script src="lib/js/jquery-3.4.1.min.js"></script>
+  <script src="lib/js/popper.min.js"></script>
+  <script src="lib/js/bootstrap.min.js"></script>
+  <script src="lib/js/face-api.min.js"></script>
+
+  <link rel="stylesheet" href="custom/css/custom.css">
+  <script src="custom/js/script.js"></script>
+  <script src="custom/js/load.js"></script>
+  <style>
+
+  </style>
+</head>
+<body>
+    <div class='container body-stl'>
+      <div class="header">
+        <h3 style="padding:5px;"><i class="fas fa-handshake"></i>Handshake</h3>
+      </div>
+      <div class="row">
+        <div class="col-sm-7 card" >
+          <div class="card-header">
+            <h5>Colleagues images</h5>
+          </div>
+          <div class="card-body">
+            <div class="img-list"></div>
+          </div>
+          
+        </div>
+        <div class="col-sm-5 card img-single">
+          <div class="card-header">
+            <h5>Face recognition</h5> 
+            <div class="loader"></div>
+          </div>
+          <div class="card-body">
+            <div id="dyna_img"></div>
+          </div>
+        </div>
+      </div>
+      <div class="card mgt-5">
+        <div class="card-header" data-toggle="collapse" data-target="#collapseOne" id="iconToggle">
+          <h5>Add/Delete colleague</h5>
+          <i class="fas fa-caret-square-down" style="font-size: x-large; position: absolute; top: 2px; right: 10px;"></i>
+        </div>
+        <div class="card-body collapse" id="collapseOne" data-toggle="false">
+          <div class="row mgt-5">
+            <div class="col-sm-6">
+              <div class="form-group row">
+                <label  class="col-sm-3 col-form-label">Colleague name</label>
+                <div class="col-sm-7">
+                  <input type="text" name="emp_name" id="emp_name" class="form-control">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label  class="col-sm-3 col-form-label">Choose image</label>
+                <div class="col-sm-7">
+                  <input  id="file_upload" type="file" name="file_upload" class="form-control">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-12 text-center">
+                  <input  id="saveBtn" type="button" name="saveBtn" value="Save" class="btn btn-primary">
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group row">
+                <label  class="col-sm-3 col-form-label">Select colleague</label>
+                <div class="col-sm-7">
+                  <select id="imgDDL" class="form-control"></select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-12 text-center">
+                  <img src="" id="viewImg">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-12 text-center">
+                  <input type="button" name="delImgBtn" id="delImgBtn" value="Delete" class="btn btn-primary">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 20px;"></div>
+    </div>
+</body>
+</html>
