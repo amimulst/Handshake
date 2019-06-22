@@ -5,10 +5,10 @@ This is a web application based on PHP, jQuery and plain javascript.
 
 <h2>Screenshot-01</h2>
 
-<img src="screenshot/pic1.jpg">
+<img src="screenshot/pic01.jpg">
 
 
 <h2>Screenshot-02</h2>
 
-<img src="screenshot/pic2.jpg">
+<img src="screenshot/pic02.jpg">
 
